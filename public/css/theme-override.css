@@ -1,0 +1,666 @@
+/* TRETO THEME OVERRIDE - Light/Cream Background with Fuchsia Pink Accents */
+:root {
+  /* Brand Colors - Light Theme */
+  --bg-cream: #FDFBF7;
+  --bg-white: #FFFFFF;
+  --surface-light: #F5F3EF;
+  --text-dark: #1A1A1A;
+  --text-muted: #4A4A4A;
+  --border-light: #E5E0D5;
+  --fuchsia-core: #E8136A;
+  --fuchsia-hover: #FF4D97;
+  --fuchsia-light: #FFE5F0;
+}
+
+/* Body - Light/Cream Background */
+body {
+  background-color: var(--bg-cream) !important;
+  color: var(--text-dark) !important;
+}
+
+body:after {
+  opacity: 0.03 !important;
+  background-image: url(../img/bg.png) !important;
+}
+
+/* Typography */
+p, .mil-text-list li, blockquote {
+  color: var(--text-muted) !important;
+}
+
+h1, h2, h3, h4, .mil-dark {
+  color: var(--text-dark) !important;
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.05) !important;
+}
+
+.mil-upper {
+  color: var(--text-muted) !important;
+}
+
+/* Accent Color - Fuchsia Pink */
+.mil-accent,
+.mil-upper span,
+.mil-pagination .mil-dot.mil-active::after,
+.mil-pagination .mil-dot:hover:after {
+  color: var(--fuchsia-core) !important;
+}
+
+/* Buttons */
+.mil-button {
+  background-color: var(--fuchsia-core) !important;
+  border-color: var(--fuchsia-core) !important;
+  color: white !important;
+  box-shadow: 7px 7px 0px 0px rgba(232, 19, 106, 0.15) !important;
+}
+
+.mil-button:hover {
+  background-color: var(--fuchsia-hover) !important;
+  border-color: var(--fuchsia-hover) !important;
+  box-shadow: 0px 0px 0px 0px rgba(232, 19, 106, 0.15) !important;
+  transform: translateY(-2px);
+}
+
+.mil-button.mil-type-2 {
+  background-color: transparent !important;
+  border-color: var(--fuchsia-core) !important;
+  color: var(--text-dark) !important;
+  box-shadow: 7px 7px 0px 0px rgba(232, 19, 106, 0.15) !important;
+}
+
+.mil-button.mil-type-2:hover {
+  background-color: var(--fuchsia-core) !important;
+  color: white !important;
+}
+
+/* Top Panel / Header - Light Theme */
+.mil-top-panel,
+.mil-top-panel.mil-active,
+.mil-top-panel.mil-tp-inner {
+  background-color: var(--bg-white) !important;
+  border-bottom: 1px solid var(--border-light) !important;
+}
+
+.mil-top-panel.mil-tp-inner::before,
+.mil-top-panel.mil-tp-inner::after {
+  background: var(--bg-white) !important;
+}
+
+.mil-top-panel .mil-logo {
+  border-bottom: solid 2px var(--fuchsia-core) !important;
+  border-right: solid 2px var(--fuchsia-core) !important;
+}
+
+.mil-top-panel.mil-tp-2 .mil-logo::before,
+.mil-top-panel.mil-tp-2 .mil-logo::after {
+  border-bottom: solid 2px rgba(232, 19, 106, 0.2) !important;
+}
+
+.mil-top-panel.mil-tp-2 .mil-logo::after {
+  border-right: solid 2px rgba(232, 19, 106, 0.2) !important;
+}
+
+/* Navigation */
+.mil-top-panel nav {
+  border-bottom: solid 2px var(--fuchsia-core) !important;
+}
+
+.mil-top-panel nav::after {
+  border-bottom: 2px solid rgba(232, 19, 106, 0.2) !important;
+}
+
+.mil-top-panel nav ul li a {
+  color: var(--text-dark) !important;
+}
+
+.mil-top-panel nav ul li a:hover,
+.mil-top-panel nav ul li.mil-active > a {
+  color: var(--fuchsia-core) !important;
+}
+
+.mil-top-panel nav ul li.mil-active:after {
+  background-color: var(--fuchsia-core) !important;
+}
+
+.mil-top-panel nav ul li ul {
+  background-color: var(--bg-white) !important;
+  border: solid 2px var(--border-light) !important;
+}
+
+/* Social Icons */
+.mil-top-panel .mil-social {
+  border-bottom: solid 2px var(--fuchsia-core) !important;
+}
+
+.mil-top-panel .mil-social::after {
+  border-bottom: 2px solid rgba(232, 19, 106, 0.2) !important;
+}
+
+.mil-top-panel .mil-social ul li a {
+  color: var(--text-dark) !important;
+}
+
+.mil-top-panel .mil-social ul li a:hover {
+  color: var(--fuchsia-core) !important;
+}
+
+/* Sections - Light Background */
+.mil-section {
+  background-color: var(--bg-cream) !important;
+}
+
+/* Banner Text Styling */
+.mil-banner-text h1 {
+  background: linear-gradient(135deg, var(--text-dark) 0%, var(--fuchsia-core) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Progress Bars / Skills */
+.mil-progress-track {
+  border-bottom: solid 2px var(--border-light) !important;
+}
+
+.mil-progress-track .mil-progress {
+  border-bottom: solid 2px var(--fuchsia-core) !important;
+  border-right: solid 2px var(--fuchsia-core) !important;
+}
+
+/* Icon Box */
+.mil-icon-box .mil-text-icon {
+  border: solid 2px var(--fuchsia-core) !important;
+  color: var(--fuchsia-core) !important;
+  background-color: var(--bg-white) !important;
+}
+
+.mil-icon-box .mil-text-icon::after {
+  background: linear-gradient(90deg, var(--border-light) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center/var(--dot-space) var(--dot-space), linear-gradient(var(--border-light) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center/var(--dot-space) var(--dot-space), var(--text-muted) !important;
+  opacity: 0.1 !important;
+}
+
+/* Experience / Timeline */
+.mil-timeline-nav,
+.mil-reviews-nav {
+  border-left: solid 2px var(--fuchsia-core) !important;
+}
+
+.mil-timeline-nav::after,
+.mil-reviews-nav::after {
+  border-left: 2px solid rgba(232, 19, 106, 0.2) !important;
+}
+
+.mil-divider {
+  background-color: var(--fuchsia-core) !important;
+}
+
+.mil-divider::after {
+  border-bottom: 2px solid rgba(232, 19, 106, 0.2) !important;
+}
+
+/* Slider Navigation */
+.mil-slider-nav .mil-prev,
+.mil-slider-nav .mil-next {
+  border: solid 2px var(--fuchsia-core) !important;
+  color: var(--fuchsia-core) !important;
+  box-shadow: 6px 6px 0 0 rgba(232, 19, 106, 0.15) !important;
+  background-color: var(--bg-white) !important;
+}
+
+.mil-slider-nav .mil-prev:hover,
+.mil-slider-nav .mil-next:hover {
+  background-color: var(--fuchsia-core) !important;
+  color: white !important;
+}
+
+/* Price Cards */
+.mil-price-card {
+  border: solid 2px var(--border-light) !important;
+  background-color: var(--bg-white) !important;
+}
+
+.mil-price-card .mil-card-head {
+  border-bottom: solid 2px var(--border-light) !important;
+}
+
+.mil-price-card .mil-card-head .mil-label {
+  background-color: var(--fuchsia-core) !important;
+}
+
+/* Portfolio - Light Theme */
+.mil-portfolio-item .mil-cover::after {
+  border: 2px solid var(--fuchsia-core) !important;
+}
+
+.mil-portfolio-item .mil-cover .mil-hover-link {
+  background-color: var(--bg-white) !important;
+  border: solid 2px var(--fuchsia-core) !important;
+  color: var(--fuchsia-core) !important;
+}
+
+.mil-portfolio-item .mil-cover .mil-hover-link svg,
+.mil-portfolio-item .mil-cover .mil-hover-link i {
+  stroke: var(--fuchsia-core) !important;
+  color: var(--fuchsia-core) !important;
+}
+
+/* Contact Cards */
+.mil-contact-card {
+  border: solid 2px var(--border-light) !important;
+  background-color: var(--bg-white) !important;
+}
+
+.mil-contact-card a {
+  color: var(--text-dark) !important;
+}
+
+.mil-contact-card a:hover {
+  color: var(--fuchsia-core) !important;
+}
+
+/* Form Fields - Light Theme */
+input, textarea {
+  background-color: var(--bg-white) !important;
+  color: var(--text-dark) !important;
+  border: 1px solid var(--border-light) !important;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--fuchsia-core) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(232, 19, 106, 0.1) !important;
+}
+
+/* Checkbox */
+.mil-checkmark {
+  background-color: var(--bg-white) !important;
+  border: 1px solid var(--border-light) !important;
+}
+
+.mil-checkbox input:checked ~ .mil-checkmark {
+  background-color: var(--fuchsia-core) !important;
+}
+
+.mil-checkbox a {
+  color: var(--fuchsia-core) !important;
+}
+
+/* Blog Cards */
+.mil-blog-card .mil-cover::after {
+  border: 2px solid var(--fuchsia-core) !important;
+}
+
+.mil-blog-card .mil-cover .mil-date {
+  color: var(--fuchsia-core) !important;
+  background-color: var(--bg-white) !important;
+}
+
+/* Filter */
+.mil-filter::before {
+  border-bottom: 2px solid var(--fuchsia-core) !important;
+}
+
+.mil-filter::after {
+  border-bottom: 2px solid rgba(232, 19, 106, 0.2) !important;
+}
+
+.mil-filter ul li a {
+  color: var(--text-dark) !important;
+}
+
+.mil-filter ul li a.mil-current {
+  color: var(--fuchsia-core) !important;
+}
+
+.mil-filter ul li a.mil-current::after {
+  background-color: var(--fuchsia-core) !important;
+}
+
+/* Pagination */
+.mil-pagination-panel {
+  border-top: solid 2px var(--fuchsia-core) !important;
+}
+
+.mil-pagination-panel::before {
+  border-bottom: 2px solid rgba(232, 19, 106, 0.2) !important;
+}
+
+.mil-pagination-panel .mil-pagination-numbers li a {
+  border: solid 2px var(--fuchsia-core) !important;
+  color: var(--text-dark) !important;
+  background-color: var(--bg-white) !important;
+  box-shadow: 6px 6px 0 0 rgba(232, 19, 106, 0.15) !important;
+}
+
+.mil-pagination-panel .mil-pagination-numbers li.mil-active a {
+  background-color: var(--fuchsia-core) !important;
+  color: white !important;
+  border-color: var(--fuchsia-core) !important;
+}
+
+/* Footer */
+.mil-footer {
+  border-top: 2px solid var(--fuchsia-core) !important;
+  color: var(--text-muted) !important;
+  background-color: var(--bg-white) !important;
+}
+
+.mil-footer::before {
+  border-bottom: 2px solid rgba(232, 19, 106, 0.2) !important;
+}
+
+/* Comments */
+.mil-comment .mil-comment-head .mil-author .mil-avatar::after {
+  border: 2px solid var(--fuchsia-core) !important;
+}
+
+.mil-comment .mil-comment-head .mil-reply {
+  border: solid 2px var(--fuchsia-core) !important;
+  color: var(--fuchsia-core) !important;
+  box-shadow: 6px 6px 0 0 rgba(232, 19, 106, 0.15) !important;
+  background-color: var(--bg-white) !important;
+}
+
+/* Call to Action */
+.mil-call-to-action {
+  background-color: var(--surface-light) !important;
+}
+
+/* Scrollbar - Light Theme */
+::-webkit-scrollbar-track {
+  background: var(--border-light) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fuchsia-core) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fuchsia-hover) !important;
+}
+
+/* Mobile Menu - Light Theme */
+@media screen and (max-width: 1200px) {
+  .mil-top-panel nav {
+    background-color: var(--bg-white) !important;
+    border-bottom: solid 2px var(--fuchsia-core) !important;
+  }
+  
+  .mil-top-panel nav ul li ul {
+    background-color: var(--surface-light) !important;
+  }
+}
+
+/* Freelance Badge - Light Theme */
+.mil-freelance-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  background: linear-gradient(135deg, rgba(232, 19, 106, 0.08) 0%, rgba(232, 19, 106, 0.03) 100%);
+  border-left: 3px solid var(--fuchsia-core);
+  border-radius: 0 30px 30px 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+  color: var(--fuchsia-core);
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.6rem !important;
+  }
+  
+  .mil-buttons-frame {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .mil-buttons-frame .mil-button {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .mil-freelance-badge {
+    font-size: 0.7rem;
+    padding: 4px 12px;
+  }
+}
+
+/* Gradient Text for Name */
+.mil-gradient-text {
+  background: linear-gradient(120deg, var(--text-dark) 0%, var(--fuchsia-core) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card Hover Effects */
+.mil-price-card,
+.mil-contact-card,
+.mil-icon-box .mil-text-icon {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mil-price-card:hover,
+.mil-contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Fix for cut-off text in About section */
+.mil-text-center h2,
+.mil-text-center .mil-up {
+  overflow: visible !important;
+  white-space: normal !important;
+  word-break: keep-all !important;
+  display: inline-block !important;
+  max-width: 100% !important;
+  padding: 0 10px !important;
+}
+
+/* Specifically for the name heading */
+.mil-text-center h2.mil-up,
+.mil-text-center .mil-up {
+  letter-spacing: normal !important;
+  text-shadow: none !important;
+}
+
+/* Ensure container has enough padding */
+.container {
+  overflow: visible !important;
+}
+
+.row {
+  overflow: visible !important;
+}
+
+.col-xl-12 {
+  overflow: visible !important;
+}
+
+
+
+
+/* ============================================
+   ADDITIONAL FIXES FOR TEXT CUT-OFF
+   ============================================ */
+
+/* Force the name to be fully visible */
+.mil-text-center h2.mil-up,
+.mil-text-center .mil-up {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+
+/* Ensure the parent containers don't clip content */
+.mil-text-center,
+.mil-section,
+.container,
+.row,
+.col-xl-12,
+.col-xl-8 {
+  overflow: visible !important;
+}
+
+/* Specific fix for the name in About2 component */
+.mil-about-person-2 + .mil-text-center h2,
+.mil-text-center h2 {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  position: relative !important;
+}
+
+/* On smaller screens, allow text to wrap */
+@media (max-width: 576px) {
+  .mil-text-center h2.mil-up {
+    white-space: normal !important;
+    word-break: keep-all !important;
+    font-size: 28px !important;
+    padding: 0 15px !important;
+  }
+}
+
+
+
+/* ============================================
+   COMPLETE ORANGE TO FUCHSIA PINK CONVERSION
+   ============================================ */
+
+/* Override all instances of orange (#fa4729, #fa4729) to fuchsia pink */
+.mil-accent,
+.mil-upper span,
+.mil-pagination .mil-dot.mil-active::after,
+.mil-pagination .mil-dot:hover:after,
+.mil-button.mil-type-2,
+.mil-button.mil-type-2:hover,
+.mil-top-panel nav ul li a:hover,
+.mil-top-panel nav ul li.mil-active > a,
+.mil-top-panel .mil-social ul li a:hover,
+.mil-filter ul li a.mil-current,
+.mil-filter ul li a:hover,
+.mil-contact-card a:hover,
+.mil-comment .mil-comment-head .mil-reply:hover,
+blockquote:before,
+.mil-text-list li:before,
+.mil-progress-track .mil-progress {
+  color: var(--fuchsia-core) !important;
+}
+
+/* Background overrides */
+.mil-button,
+.mil-price-card .mil-card-head .mil-label,
+.mil-checkbox input:checked ~ .mil-checkmark,
+.mil-pagination-panel .mil-pagination-numbers li.mil-active a,
+.swiper-pagination-bullet-active {
+  background-color: var(--fuchsia-core) !important;
+}
+
+/* Border overrides */
+.mil-button,
+.mil-progress-track .mil-progress,
+.mil-icon-box .mil-text-icon,
+.mil-slider-nav .mil-prev,
+.mil-slider-nav .mil-next,
+.mil-portfolio-item .mil-cover::after,
+.mil-portfolio-item .mil-cover .mil-hover-link,
+.mil-comment .mil-comment-head .mil-reply,
+.mil-pagination-panel .mil-pagination-numbers li a,
+.mil-blog-card .mil-cover::after,
+.mil-price-card {
+  border-color: var(--fuchsia-core) !important;
+}
+
+/* Pagination dots (the specific orange dots you mentioned) */
+.mil-pagination .mil-dot::after {
+  border: 4px solid rgba(232, 19, 106, 0.3) !important;
+  background: var(--bg-white) !important;
+}
+
+.mil-pagination .mil-dot.mil-active::after {
+  border-color: var(--fuchsia-core) !important;
+  background: var(--fuchsia-core) !important;
+}
+
+.mil-pagination .mil-dot:hover::after {
+  border-color: var(--fuchsia-core) !important;
+  background: var(--fuchsia-core) !important;
+}
+
+.mil-pagination .mil-dot:before {
+  color: var(--fuchsia-core) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+  background: var(--fuchsia-core) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fuchsia-hover) !important;
+}
+
+/* Selection color */
+::selection {
+  background: var(--fuchsia-core) !important;
+  color: white !important;
+}
+
+::-moz-selection {
+  background: var(--fuchsia-core) !important;
+  color: white !important;
+}
+
+/* Swiper pagination if used */
+.swiper-pagination-bullet-active {
+  background: var(--fuchsia-core) !important;
+}
+
+/* Icon hover effects */
+.mil-icon-box .mil-text-icon:hover {
+  border-color: var(--fuchsia-core) !important;
+  color: var(--fuchsia-core) !important;
+}
+
+/* Portfolio hover link */
+.mil-portfolio-item .mil-cover .mil-hover-link:hover {
+  background-color: var(--fuchsia-core) !important;
+  border-color: var(--fuchsia-core) !important;
+}
+
+.mil-portfolio-item .mil-cover .mil-hover-link:hover svg,
+.mil-portfolio-item .mil-cover .mil-hover-link:hover i {
+  stroke: white !important;
+  color: white !important;
+}
+
+/* Blog card date */
+.mil-blog-card .mil-cover .mil-date {
+  background-color: var(--fuchsia-core) !important;
+  color: white !important;
+}
+
+/* Button hover */
+.mil-button:hover {
+  background-color: var(--fuchsia-hover) !important;
+  border-color: var(--fuchsia-hover) !important;
+}
+
+/* Form focus */
+input:focus, 
+textarea:focus {
+  border-color: var(--fuchsia-core) !important;
+  box-shadow: 0 0 0 3px rgba(232, 19, 106, 0.1) !important;
+}
