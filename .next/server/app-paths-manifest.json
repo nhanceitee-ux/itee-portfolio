@@ -1,7 +1,1 @@
-{
-  "/page": "app/page.js",
-  "/prices/page": "app/prices/page.js",
-  "/portfolio/page": "app/portfolio/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/contact/page": "app/contact/page.js"
-}
+{}
