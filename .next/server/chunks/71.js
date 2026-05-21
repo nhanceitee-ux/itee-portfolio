@@ -1,0 +1,1 @@
+"use strict";exports.id=71,exports.ids=[71],exports.modules={8071:(e,o,t)=>{t.r(o),t.d(o,{$$typeof:()=>d,__esModule:()=>r,default:()=>l});let s=(0,t(6843).createProxy)(String.raw`C:\Users\800711300\Downloads\1. new\treto\components\PortfolioIsotope.js`),{__esModule:r,$$typeof:d}=s,l=s.default}};
