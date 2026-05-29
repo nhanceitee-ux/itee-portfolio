@@ -216,3 +216,4 @@ export const About2 = () => {
     </div>
   );
 };
+ /*--updated on 29--*/
