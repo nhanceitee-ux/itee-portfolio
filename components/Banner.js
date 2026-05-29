@@ -133,3 +133,4 @@ export const Banner2 = () => {
     </div>
   );
 };
+/*--updated on 29--*/
