@@ -110,3 +110,4 @@ const Contact = () => {
   );
 };
 export default Contact;
+/*--updated on 29--*/
