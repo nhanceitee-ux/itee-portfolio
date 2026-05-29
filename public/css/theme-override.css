@@ -655,6 +655,7 @@ blockquote:before,
 /* Button hover */
 .mil-button:hover {
   background-color: var(--fuchsia-hover) !important;
+  color: white !important;
   border-color: var(--fuchsia-hover) !important;
 }
 
@@ -663,4 +664,18 @@ input:focus,
 textarea:focus {
   border-color: var(--fuchsia-core) !important;
   box-shadow: 0 0 0 3px rgba(232, 19, 106, 0.1) !important;
+}
+
+
+/* Ensure button text is readable */
+.mil-button {
+  color: white !important;
+}
+
+.mil-button.mil-type-2 {
+  color: var(--text-dark) !important;
+}
+
+.mil-button.mil-type-2:hover {
+  color: white !important;
 }
